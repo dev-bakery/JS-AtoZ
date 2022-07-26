@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. 세 수 중 최솟값</title>
+</head>
+<body>
+    <script>
+        function solution(a, b, c){
+            let answer;
+            if(a > b){
+                answer = b;
+            }else{
+                answer = a;
+            }
+            if(c < answer){
+                answer = c;
+            }
+            return answer;
+        }
+        console.log(solution(2, 5, 1));
+    </script>
+</body>
+</html>
